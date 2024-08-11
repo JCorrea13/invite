@@ -19,7 +19,6 @@ body {
 }
 
 .container {
-    max-width: 800px;
     margin: 0 auto;
     padding: 40px 20px;
 
@@ -106,4 +105,41 @@ body {
     padding: 20px 0;
     background-color: #333;
     color: #fff;
+}
+
+.parents-conatainer{
+    background-color: #f1efe8;
+    color: black;
+    font-size: 14px;
+}
+
+.parents {
+    font-family: "Whisper", system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.separator {
+    width: 1px;
+    border-right: #f1efe8;
+    border-top: #f1efe8;
+    border-bottom: #f1efe8;
+    border-left: #2d405c;
+    border-style: solid;
+}
+
+.hands {
+    background-image: url("./img/us.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .9;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
