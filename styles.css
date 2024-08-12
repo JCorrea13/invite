@@ -143,3 +143,16 @@ body {
     top: 0;
     left: 0;
 }
+
+.button {
+    margin: 0 60px;
+    border: solid;
+    border-color: #f1efe8;
+    color: #f1efe8;
+}
+
+.itinerary-container {
+    background-color: #f1efe8;
+    color: black;
+    font-size: 14px;
+}
