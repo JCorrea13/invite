@@ -107,7 +107,7 @@ body {
     color: #f1efe8;
 }
 
-.parents-conatainer{
+.parents-conatainer {
     background-color: #f1efe8;
     color: black;
     font-size: 14px;
@@ -164,7 +164,12 @@ body {
     flex-direction: column;
 }
 
-.alone{
+.alone {
     height: 50px;
     margin: 0 auto;
+}
+
+.sub-section {
+    display: flex;
+    flex-direction: column;
 }
