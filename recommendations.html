@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="time.js"></script>
+    <link rel="stylesheet" href="carouse.css">
     <meta property="og:title" content="Marisol y Manuel" />
     <meta property="og:description" content="Nuestra Boda" />
     <meta property="og:url" content="https://marisolymanuel.com/" />
@@ -23,16 +23,54 @@
     <div class="top-container">
         <section class="invitation">
             <div class="sub-section">
-                <span>HOSPEDAJE</span>
-            </div>
-            <div class="sub-section">
-                <span>DIA FESTIVO</span>
-            </div>
-            <div class="sub-section">
                 <span>ABRIGO</span>
+                <span></span>
+            </div>
+            <div class="sub-section">
+                <span>DÍA FESTIVO</span>
+                <span>Este fin de semana también celebraremos a México prepárate para tomar mucho tequila.</span>
+                <span style="font-size: 12px;">Toma tus precauciones por el puente del 20 de Noviembre. Considera el
+                    tráfico y tu hospedaje.</span>
             </div>
         </section>
+        <div class="container" style="padding: 10%; width: auto; text-align: center;">
+            <div style="display: flex; flex-direction: column;">
+                <span>HOSPEDAJE</span>
+                <span>Si estás en busca de hospedaje, te compartimos las siguientes opciones:</span>
+
+                <div class="carousel">
+                    <div class="slides" id="slidescontainer">
+                        <div class="slide active">
+                            <span class="hotel-name">Hotel la Reserva</span>
+                            <span>Carr Jocotepec-chapala Km 960, 45920 Ajijic, Jal.</span>
+                            <a class="dir-button" href="https://maps.app.goo.gl/9LPQwNfy7XQxuees9">Ver Dirección</a>
+                        </div>
+                        <div class="slide">
+                            <span class="hotel-name">Hotel el Pescador</span>
+                            <span>Carr Jocotepec-chapala 1008, Centro, 45921 Ajijic, Jal.</span>
+                            <a class="dir-button" href="https://maps.app.goo.gl/GdiVkxjx4vNoCkML7">Ver Dirección</a>
+                        </div>
+                        <div class="slide">
+                            <span class="hotel-name">Hotel boutique Sol y Luna Spa</span>
+                            <span>Río Bravo 10 A, Centro, 45920 Ajijic, Jal.</span>
+                            <a class="dir-button" href="https://maps.app.goo.gl/ZWbrB1umNFhCRckR8">Ver Dirección</a>
+                        </div>
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="carousel-button" id="previous">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#f1efe8" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                        </button>
+                        <button class="carousel-button" id="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="#f1efe8" viewBox="0 0 320 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </body>
+<script src="carousel.js"></script>
 
 </html>
