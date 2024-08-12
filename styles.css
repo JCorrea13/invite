@@ -155,4 +155,16 @@ body {
     background-color: #f1efe8;
     color: black;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.itinerary-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.alone{
+    height: 50px;
+    margin: 0 auto;
 }
