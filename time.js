@@ -12,7 +12,7 @@ function updateCountdown() {
     document.getElementById('hours').textContent = (hours > 9 ? hours : '0' + hours) + ':';
     document.getElementById('minutes').textContent = (minutes > 9 ? minutes : '0' + minutes) + ':';
     document.getElementById('seconds').textContent = (seconds > 9 ? seconds : '0' + seconds);
-    
+
     if (timeDifference < 0) {
         clearInterval(interval);
         document.getElementById('countdown').textContent = "ES HOY, ES HOY!";
@@ -21,3 +21,10 @@ function updateCountdown() {
 
 const interval = setInterval(updateCountdown, 1000);
 updateCountdown();
+
+function toggleZoom(element) {
+    const slides = document.querySelectorAll('.gallery__img');
+    slides.forEach((slide) => slide.classList.remove('zoomed'));
+    
+    element.classList.add('zoomed');
+}
