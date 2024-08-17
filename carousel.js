@@ -10,17 +10,19 @@ function showSlide(slideIndex) {
     slides[slideIndex].classList.add('active');
 }
 
+const interval = setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+}, 3500);
+
 prevButton.addEventListener('click', () => {
     currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    clearInterval(interval);
     showSlide(currentSlide);
 });
 
 nextButton.addEventListener('click', () => {
     currentSlide = (currentSlide + 1) % slides.length;
+    clearInterval(interval);
     showSlide(currentSlide);
 });
-
-setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-}, 3500);
