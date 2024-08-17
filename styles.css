@@ -140,6 +140,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    margin: 15px 0px;
 }
 
 .separator {
@@ -185,7 +186,7 @@ body {
 
 .alone {
     height: 50px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .sub-section {
