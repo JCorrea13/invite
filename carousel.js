@@ -25,4 +25,4 @@ nextButton.addEventListener('click', () => {
     currentSlide = (currentSlide + 1) % slides.length;
     clearInterval(interval);
     showSlide(currentSlide);
-});
+}); 
