@@ -321,3 +321,17 @@ body {
     grid-row-start: 23;
     grid-row-end: 27;
 }
+
+@media screen and (max-width: 318px) {
+    
+    .overview-title{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 263px) {
+    
+    .overview-title{
+        line-height: 1;
+    }
+}
